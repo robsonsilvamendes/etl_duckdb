@@ -1,0 +1,15 @@
+ecommerce_sales:
+  outputs:
+    dev:
+      type: duckdb
+      # This path must point to the yourdatabase
+      path: '/Volumes/PortableSSD/Projetos/etl_duckdb/duckdb/ecommerce.duckdb'
+      threads: 1
+
+    prod:
+      type: duckdb
+      # This path must point to the yourdatabase
+      path: '/Volumes/PortableSSD/Projetos/etl_duckdb/duckdb/ecommerce.duckdb'
+      threads: 4
+
+  target: dev

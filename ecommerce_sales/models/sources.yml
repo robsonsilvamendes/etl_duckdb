@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: ecommerce_raw
+    schema: main #<-- This tells dbt the actual schema name in the database (DuckDB)
+    tables:
+      - name: customer_details
+      - name: ecommerece_sales_data_2024
+      - name: product_details
